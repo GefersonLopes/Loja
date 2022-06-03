@@ -1,107 +1,363 @@
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-/* CABEÇALHO */
-.filtersContainer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 30px;
-}
+    body{
+        margin: 0 20px 0 0;
+    }
+    body::-webkit-scrollbar {
+        display: none;
+    }  
+    nav{
+        margin: 0px 0px 25px 0px;
+        width: 100%;
+        height: 56px;
+        left: 146px;
+        top: 190px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 40px -20px rgba(0, 0, 0, 0.25);
+        border: 1px solid #FFFFFF;
+        border-radius: 8px;
+    }
+    nav > h1{
+        margin: 12px auto;
+        width: 80px;
+        height: 27px;
+        left: 692px;
+        top: 14px;
 
-.estiloGeralBotoes{
-    border: none;
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: block;
-    font-size: 0.9rem;
-}
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 27px;
+        color: #212529;
+    }
+    #filters{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .estiloGeralBotoes--mostrarTodos{
+        box-sizing: border-box;
 
-.estiloGeralBotoes--mostrarTodos {
-    color: black;
-    background-color: #d3d3d3;
-}
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 26px;
+        gap: 10px;
 
-.estiloGeralBotoes--filtrarHortifruti {
-    background-color: tomato;
-    color: white;
-}
+        width: 177px;
+        height: 52px;
+        left: 146px;
+        top: 94px;
 
-.containerBuscaPorNome {
-    display: flex;
-    justify-content: space-between;
-}
+        background: #12B886;
+        border: 1.5px solid #12B886;
+        border-radius: 8px;
 
-.campoBuscaPorNome {
-    border-radius: 5px 0 0 5px;
-    border: 1px solid black;
-    padding: 0 10px;
-}
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
 
-.estiloGeralBotoes--botaoBuscaPorNome {
-    background-color: rgb(17, 17, 20);
-    color: white;
-    border-radius: 0 5px 5px 0;
-}
+        color: #FFFFFF;
+        margin: 12px;
 
-/* CONTEÚDO */
-main{}
+    }
+    .estiloGeralBotoes--filtrar{
+        box-sizing: border-box;
+        margin: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 26px;
+        gap: 10px;
 
-.containerListaProdutos {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-}
+        width: 122px;
+        height: 52px;
+        left: 335px;
+        top: 94px;
 
-.containerListaProdutos ul {
-    list-style: none;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
+        background: rgba(18, 184, 134, 0.05);
+        border: 1.5px solid rgba(18, 184, 134, 0.05);
+        border-radius: 8px;
 
-.containerListaProdutos ul li {
-    color: black;
-    font-weight: bold;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    transition: ease-in-out .1s;
-    width: 20%;
-}
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
 
-.containerListaProdutos ul li:hover {
-    box-shadow: 3px 3px 13px 1px rgb(146 146 146);
-}
+    }
+    .containerBuscaPorNome{
+        display: flex;
+        align-items: center;
+    }
+    .campoBuscaPorNome{
+        width: 324px;
+        height: 42px;
+        left: 925px;
+        top: 94px;
 
-.containerListaProdutos ul li img {
-    width: 100%;
-    max-width: 80px;
-}
+        background: #F1F3F5;
+    }
+    .estiloGeralBotoes--botaoBuscaPorNome{
+        box-sizing: border-box;
 
-.containerListaProdutos ul li h3 {
-    font-size: 1.5rem;
-}
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 26px;
+        gap: 10px;
 
-.containerListaProdutos ul li p {
-    font-size: 1.5rem;
-}
-.containerListaProdutos ul li span {
-    font-size: 0.8rem;
-    font-weight: 500;
-    margin-top: 10px;
-    display: inline-block;
-}
+        width: 59px;
+        height: 52px;
+        left: 1258px;
+        top: 94px;
 
-/* PREÇO TOTAL */
-.containerPrecoTotal{
-    text-align: center;
-}
-.containerPrecoTotal p{
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-.containerPrecoTotal p span{}
+        background: #12B886;
+        border: 1.5px solid #12B886;
+        border-radius: 8px;
+    }
+    .containerPrecoTotal{
+
+        margin: 25px 0px 70px 0px;
+        width: 100%;
+        height: 56px;
+        left: 146px;
+        top: 190px;
+
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+    }
+    .carrinhoDeCompraFinal{
+        margin-top: 25px;
+    }
+    .containerListaProdutos{
+        display: flex;
+        justify-content: space-between;
+    }
+    #carrinhoIcon{
+        height:13px ;
+        width:13px ;
+        margin: 0 32px 0 15px;
+    }
+    .iconeCarrinho{
+        display: flex;
+        align-items: center;
+        width: 290px;
+        height: 50.75px;
+        left: 1027px;
+        top: 205px;
+
+        background: #12B886;
+        border-radius: 12px 12px 0px 0px;
+    }
+    .iconeCarrinho > p{ 
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        margin-left: -19px;
+        
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+    }
+    .itensSelecionados{  
+        overflow-y: scroll;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        width: 289.09px;
+        height: 268.25px;
+        left: 1027px;
+        top: 255.75px;
+
+        background: #F8F9FA;
+        border-radius: 0px 0px 12px 12px;
+    }
+    .itensSelecionados::-webkit-scrollbar {
+        display: none;
+      }  
+    #sacola{
+        width: 36px ;
+        height: 40px;
+        display: flex;
+        margin: 80px auto 10px auto;
+    }
+    .itensSelecionados >p{
+        width: 243px;
+        height: 44px;
+        display: flex;
+        margin: 0 auto;
+
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        color: #868E96;
+    }
+    .nome{
+        width: 500px;
+        height: 21px;
+        left: 207px;
+        top: 208px;
+
+        margin: 15px;
+        margin-left: 35%;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 21px;
+        display: flex;
+        color: #212529;
+    }
+    #precoTotal{
+        display: flex;
+        align-items: center;
+    }
+    .itens{
+        background-color: #12b88608;
+    }
+    ol{
+        margin: 0 25px;
+        list-style: auto;
+        color: #868E96;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+
+        margin: 20px;
+    }
+    li{
+        margin: 8px;
+    }
+    .NomeDosCards{
+        margin: 10px 0;
+        left: 50.85%;
+        right: 38.55%;
+        top: 47.44%;
+        bottom: 49.95%;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 19px;
+        line-height: 27px;
+
+        color: #212529;
+
+    }
+    .nutrientes{
+        display: flex;
+        width: 100px;
+        color: #868E96;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    li > span{
+        margin: 10px 20px;
+        color: #868E96;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    li > p{
+        margin: 15px 0;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 18px;
+        line-height: 16px;
+    }    
+    .Comprar{
+        margin: -38px 10px 10px -50px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .botao{
+        box-sizing: border-box;
+        width: 81px;
+        height: 32px;
+        left: 647px;
+        top: 517px;
+
+        background: rgba(18, 184, 134, 0.05);
+        border: 1.5px solid rgba(18, 184, 134, 0.05);
+        border-radius: 8px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+
+        color: #12B886;
+    }
+    .imagemCarrinho{
+        height:70px ;
+        width: 90px;
+    }
+    .liCarrinho{
+        display: flex;
+        align-items: center;
+        margin: 5px;
+    }
+    .liCarrinho > img{
+        border-radius: 8px;
+    }
+    .infoCarrinho{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px;
+    }
+    .infoCarrinho_{
+        margin: 5px;
+        width: 166.31px;
+        height: 20px;
+        left: 82px;
+        top: 3px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+    }
+    #Infosecao{
+        color: #868E96;
+    }
+    .quantidade{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 289px;
+        height: 59px;
+        background: #F8F9FA;
+        padding: 0 23px;
+        font-weight: bolder;
+        font-family: 'Poppins';
+        font-style: normal;
+    }
